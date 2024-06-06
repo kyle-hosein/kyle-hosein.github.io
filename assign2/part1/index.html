@@ -101,10 +101,7 @@
       <h1>Mozilla</h1>
       <img
   class="fit-picture"
-  src="C:\Users\kyleh\Documents\kyle-hosein.github.io\assign2\part1\firefox_logo400.png"
-  alt="firefox logo" />
-
-
+  src="firefox_logo400.png" alt="firefox logo">
     </header>
 
     <main>
@@ -127,39 +124,32 @@
           <img 
 	srcset = "firefox_logo120.png 120w, firefox_logo400.png 400w"
 	sizes="(max-width: 500px) 120px, 400px"
-  src="firefox_logo400.png"
-  alt="firefox logo" />
+  	src="firefox_logo400.png" alt="firefox logo" />
         </a>
         <a href="https://www.mozilla.org/">
           <img
 	srcset = "mozilla-dinosaur-head120.png 120w, mozilla-dinosaur-head400.png 400w"
 	sizes="(max-width: 500px) 120px, 400px"
-  src="mozilla-dinosaur-head400.png"
-  alt="firefox logo" />
+  	src="mozilla-dinosaur-head400.png" alt="firefox logo" />
         </a>
         <a href="https://addons.mozilla.org/">
           <img
   	srcset = "firefox-addons120.jpg 120w, firefox-addons400.jpg 400w"
 	sizes="(max-width: 500px) 120px, 400px"
-  src="firefox-addons400.jpg"
-  alt="firefox logo" />
+  	src="firefox-addons400.jpg" alt="firefox logo" />
         </a>
         <a href="https://developer.mozilla.org/en-US/">
-          <img
-  src="mdn.svg" role="img" alt="Learn web development with MDN"
-  alt="Learn web development with MDN" />
+          <img src="mdn.svg" role="img" alt="Learn web development with MDN">
         </a>
         <div class="clearfix"></div>
       </div>
 
       <div class="red-panda">
-        <img
-    srcset="red-panda.jpg"
-  sizes="(max-width: 600px) 480px,
-         800px"
-  src="red-panda1200.jpg"
-  alt="red panda img" />
-
+        
+	<picture>
+    	 <source media="(max-width: 600px)" srcset="red-panda600.jpg">
+ 	 <img src="red-panda1200.jpg" alt="a red panda" />
+	</picture>
       </div>
 
     </main>

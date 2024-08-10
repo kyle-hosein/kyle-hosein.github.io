@@ -1,250 +1,201 @@
-/* || General setup */
-
+/* General setup */
 html, body {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 html {
-  font-size: 10px;
-  background-color: #dde;
+    font-size: 10px;
+    background-color: #dde;
 }
 
 body {
-  width: 80%;
-  min-width: 1024px;
-  margin: 0 auto;
+    width: 80%;
+    min-width: 1024px;
+    margin: 0 auto;
+    background-color: #dde;
 }
 
-/* || typography */
-
-font[size="7"], font[size="6"], font[size="5"] {
-  font-family: 'Sonsie One', cursive;
-  color: #2a2a2a;
+h1 {
+    font-family: 'Sonsie One', cursive;
+    color: #fff;
+    text-align: center;
+    font-size: 5em;
+    text-shadow: 3px 3px 3px black;
 }
 
-p, input, li, table, label {
-  font-family: 'Open Sans Condensed', sans-serif;
-  color: #2a2a2a;
+h2, h3 {
+    font-family: 'Sonsie One', cursive;
+    font-size: 3.5em;
+    color: black;
+}
+    
+p {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 2.5em;
+    color: #333;
+}
+    
+li, dt, dd {
+    font-size: 2em;
+}
+    
+a {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #0000EE;
 }
 
-font[size="7"] {
-  font-size: 4rem;
-  text-align: center;
-  color: white;
-  text-shadow: 2px 2px 10px black;
+.header {
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    background-color: transparent;
 }
 
-font[size="6"] {
-  font-size: 3rem;
-  text-align: center;
+.nav-banner {
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin-bottom: 2rem;
+    background-color: #fff; 
 }
 
-font[size="5"] {
-  font-size: 2.2rem;
+.nav {
+    background-color: #fff;
 }
 
-p, li, table {
-  font-size: 1.6rem;
-  line-height: 1.5;
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 2rem;
 }
 
-/* || header layout */
-
-div[class="nav"], article, footer, .secondary {
-  background-color: green;
+.nav ul li {
+    display: inline;
 }
 
-article, footer, .secondary {
-  padding: 10px 30px;
+.nav ul li a {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 3rem;
+    text-decoration: none;
+    color: black;
 }
 
-article {
-  margin-right: 10px;
-}
-
-div[class="nav"] {
-  height: 50px;
-  background-color: ff80ff;
-  display: flex;
-  padding: 1% 0;
-  margin-bottom: 10px;
-}
-
-div[class="nav"] ul {
-  padding: 0;
-  list-style-type: none;
-  flex: 2;
-  display: flex;
-}
-
-div[class="nav"] li {
-  display: inline;
-  text-align: center;
-  flex: 1;
-}
-
-div[class="nav"] a {
-  display: inline-block;
-  font-size: 2rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: black;
-}
-
-div[class="nav"] .search {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  height: 100%;
-  padding: 0 2em;
-}
-
-.search input {
-  font-size: 1.6rem;
-  height: 32px;
+.search {
+    margin-left: auto;
 }
 
 .search input[type="search"] {
-  flex: 3;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 2rem;
 }
 
-.search input[type="submit"] {
-  flex: 1;
-  margin-left: 1rem;
-  background: #333;
-  border: 0;
-  color: white;
+.main-content {
+    display: flex;
+    justify-content: space-between;
 }
 
-/* || main layout */
-
-main {
-  display: flex;
-}
-
-article {
-  flex: 5;
+.article-content {
+    flex: 2;
+    margin-right: 2rem;
 }
 
 .secondary {
-  flex: 2;
+    flex: 1;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-footer {
-  margin-top: 10px;
+article {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-/* Table styling */
 
 table {
-  width: 100%;
-  background-color: #dde;
-  border-collapse: collapse;
+    font-size: 1.8em;
+    border: 2px solid black;
+    border-collapse: collapse;
 }
 
-th, td {
-  padding: 10px;
+caption {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+th {
+    font-weight: bold;
+    border: 2px solid black;
+    padding: 10px;
 }
 
 td {
-  text-align: center;
+    border: 1px solid black;
+    padding: 10px;
 }
-
-th[scope="col"] {
-  border-bottom: 1px solid black;
-}
-
-tbody tr:nth-child(odd) {
-  background-color: #def;
-}
-
-/* styling content images and audio */
-
-img, audio {
-  display: block;
-  margin: 0 auto;
-}
-
-audio {
-  width: 500px;
-}
-
-/* Comments styling */
 
 .comments {
-  background-color: #def;
-  padding: 10px;
-}
-
-.show-hide {
-  cursor: pointer;
-}
-
-.comments font[size="6"] {
-  font-size: 2rem;
-}
-
-.comments font[size="6"]:nth-of-type(2) {
-  margin-bottom: 0;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .comment-form {
-  margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .comment-form .flex-pair {
-  display: flex;
-  padding: 0 3rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
 }
 
 .comment-form label {
-  align-self: center;
-  flex: 2;
-  text-align: right;
+    font-size: 1.8rem;
 }
 
-.comment-form input {
-  margin-left: 1rem;
-  flex: 6;
-}
-
-.show-hide {
-  text-align: center;
-  width: 150px;
-}
-
-.comment-form input, .comment-form label, .show-hide {
-  font-size: 1.6rem;
-  line-height: 32px;
-}
-
-.comment-form input[type="submit"], .show-hide {
-  background: #333;
-  border: 0;
-  color: white;
-}
-
-.comment-form input[type="submit"] {
-  width: 30%;
-  display: block;
-  margin: 0 auto;
+.comment-form input[type="text"] {
+    font-size: 1.8rem;
+    flex: 1;
+    margin-left: 1rem;
 }
 
 .comment-container {
-  margin-top: 0;
+    list-style-type: none;
+    padding: 0;
 }
 
 .comment-container li {
-  list-style-type: none;
-  display: flex;
+    margin-bottom: 2rem;
 }
 
-.comment-container li p:nth-child(1) {
-  flex: 1;
-  font-weight: bold;
+.comment-container li p {
+    margin: 0;
+    font-size: 2rem;
 }
 
-.comment-container li p:nth-child(2) {
-  flex: 5;
+.about-author {
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    padding: 2rem;
+    text-align: center;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
 }
